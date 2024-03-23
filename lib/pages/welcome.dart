@@ -43,21 +43,21 @@ class WelcomePage extends StatelessWidget {
                     "Let's Get",
                     style: GoogleFonts.raleway(
                         color: const Color(0xff464646),
-                        fontSize: 30,
+                        fontSize: sheight * 3,
                         fontWeight: FontWeight.normal),
                   ),
                   Text(
                     "Started",
                     style: GoogleFonts.raleway(
                         color: const Color(0xff464646),
-                        fontSize: 60,
+                        fontSize: sheight * 6,
                         fontWeight: FontWeight.w700),
                   ),
                   Text(
                     "Your own Personal Digital\nDiary",
                     style: GoogleFonts.raleway(
                         color: const Color(0xff464646),
-                        fontSize: 17,
+                        fontSize: sheight * 2.5,
                         fontWeight: FontWeight.w400),
                   ),
                 ],
@@ -82,7 +82,7 @@ class WelcomePage extends StatelessWidget {
                       "This Way",
                       style: GoogleFonts.raleway(
                           color: const Color(0xff464646),
-                          fontSize: 15,
+                          fontSize: sheight * 2,
                           fontWeight: FontWeight.w400),
                     )
                   ]),
