@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_diary/components/note.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -80,15 +81,18 @@ class _HomeState extends State<Home> {
             Positioned(
               bottom: 0,
               left: swidth * 5,
-              child: Container(
+              child: SizedBox(
                 width: swidth * 90,
                 height: sheight * 71,
-                color: const Color.fromARGB(79, 255, 255, 255),
-                child: const Wrap(
-                  runAlignment: WrapAlignment.spaceAround,
-                  children: [
-                    
-                  ],
+                child: const SingleChildScrollView(
+                  child: Wrap(
+                    children: [
+                      Note(
+                        title: "First note",
+                        note: "Hello world! I'm new to Flutter!!",
+                      ),
+                    ],
+                  ),
                 ),
               ))
           ],
